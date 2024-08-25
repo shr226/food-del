@@ -1,0 +1,90 @@
+/* List.css */
+
+/* Overall container styling */
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Title styling */
+.list p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Table container styling */
+.list-table {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table header row styling */
+.list-table-format.title {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ddd;
+    padding: 12px 15px;
+    font-weight: bold;
+}
+
+/* Common table row styling */
+.list-table-format {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border-bottom: 1px solid #cacaca;
+    font-size: 13px;
+}
+
+/* Individual table cell styling */
+.list-table-format p,
+.list-table-format b {
+    margin: 0;
+    text-align: center;
+}
+
+/* Image styling */
+.list-table-format img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Loading text styling */
+.loading-text {
+    font-size: 18px;
+    color: #888;
+}
+
+/* Toast container positioning */
+.Toastify__toast-container {
+    z-index: 100;
+}
+.cursor{
+    cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .list-table-format {
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 10px;
+    }
+    .list-table-format.title {
+        display: none;
+    }
+    .list-table-format img {
+        width: 40px;
+        height: 40px;
+    }
+}

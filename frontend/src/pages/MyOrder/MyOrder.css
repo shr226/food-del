@@ -1,0 +1,68 @@
+.my-orders {
+  margin: 50px 0;
+  width: 100%; /* Make sure the container takes full width */
+}
+
+.my-orders .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.my-orders-order {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1fr;
+  align-items: center;
+  gap: 30px;
+  font-size: 14px;
+  padding: 10px 20px;
+  color: #454545;
+  border: 1px solid tomato;
+  width: 100%; /* Ensure each order item takes full width */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.my-orders-order img {
+  width: 50px;
+}
+
+.my-orders-order p span {
+  color: tomato;
+}
+
+.my-orders-order p b {
+  font-weight: 500;
+  color: #454545;
+}
+
+/* Adjust spacing between status and button */
+.my-orders-order p {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust as needed for spacing */
+}
+
+/* Reduce right margin of the button */
+.my-orders-order button {
+  border: none;
+  padding: 12px 8px; /* Reduced horizontal padding */
+  border-radius: 4px;
+  background-color: #ffe1e1;
+  cursor: pointer;
+  margin-right: 0; /* Ensure button is aligned to the right edge */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .my-orders-order {
+    grid-template-columns: 1fr 2fr 1fr;
+    row-gap: 5px;
+    font-size: 12px;
+  }
+
+  .my-orders-order button {
+    font-size: 10px;
+    padding: 10px 5px; /* Adjust padding for smaller screens */
+  }
+}
